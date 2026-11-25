@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 768 768" role="img" aria-labelledby="title">
+  <title id="title">Ana Márquez</title>
+  <circle cx="384" cy="384" r="384" fill="#858875"/>
+  <circle cx="384" cy="384" r="350" fill="none" stroke="#d9bd75" stroke-width="7"/>
+  <path d="M170 425c66-23 110-151 169-151 42 0 49 204 101 204 39 0 53-137 119-137 40 0 81 45 139 102" fill="none" stroke="#f5f1e8" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
+  <path d="M278 465c-42 0-60-31-60-78 0-59 32-142 94-142h62m0 0v184c0 37 14 57 42 57" fill="none" stroke="#f5f1e8" stroke-linecap="round" stroke-linejoin="round" stroke-width="9"/>
+  <text x="384" y="543" fill="#f5f1e8" font-family="Georgia, 'Times New Roman', serif" font-size="49" letter-spacing="13" text-anchor="middle">ANA MÁRQUEZ</text>
+  <path d="M326 652c53-28 91-68 124-126m-79 98c-24-25-48-33-71-28 12 25 34 36 71 28Zm40-40c13-30 39-48 70-51-6 27-28 45-70 51Zm-15 15c34 0 60 11 80 34-30 13-57 5-80-34Zm45-46c22-25 51-35 82-29-15 24-41 34-82 29Z" fill="none" stroke="#d9bd75" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"/>
+</svg>

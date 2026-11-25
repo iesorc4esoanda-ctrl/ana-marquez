@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Belleza, calma y tratamientos estéticos en Ana Márquez Estética & Bienestar, en Utiel. Descubre la carta y reserva tu cita.">
+  <meta name="theme-color" content="#fdfbf7">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:title" content="Ana Márquez Estética & Bienestar | Utiel">
+  <meta property="og:description" content="Un refugio de bienestar donde la innovación y la tradición mediterránea se encuentran.">
+  <title>Ana Márquez Estética & Bienestar | Utiel</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app"></div>
+  <script>
+    const CONFIG = {
+      negocio: {
+        nombre: "Ana Márquez",
+        sector: "Estética & Bienestar",
+        eslogan: "El equilibrio entre la belleza natural y el bienestar mediterráneo.",
+        telefono: "+34 609 87 33 38",
+        telefonoAlt: "+34 962 17 02 12",
+        whatsapp: "34609873338",
+        whatsappMensaje: "Hola, me gustaría informarme sobre los tratamientos de Ana Márquez.",
+        asistenteWebhook: "",
+        web: "",
+        seoTitle: "Ana Márquez Estética & Bienestar | Utiel",
+        seoDescription: "Belleza, calma y tratamientos estéticos en Ana Márquez Estética & Bienestar, en Utiel. Descubre la carta y reserva tu cita.",
+        redes: {
+          instagram: "https://www.instagram.com/anamarquezesteticautiel/",
+          facebook: "https://www.facebook.com/anamarquezesteticautiel/"
+        }
+      },
+      tema: {
+        colorPrincipal: "#556b2f",
+        fondo: "#ffffff",
+        fondoAlterno: "#ffffff",
+        texto: "#493f35",
+        radio: "24px",
+        fuenteTitulos: "Cormorant Garamond",
+        fuenteTexto: "Lato"
+      },
+      hero: {
+        titular: "Belleza y bienestar en Utiel.",
+        subtitulo: "Tratamientos personalizados para cuidar tu piel, sentirte bien y conectar contigo.",
+        botonPrincipal: "Descubrir tratamientos",
+        botonSecundario: "Reservar experiencia",
+        puntos: ["Cuidado a tu medida", "Tecnología estética", "Bienestar mediterráneo"]
+      },
+      galeria: {
+        id: "tratamientos",
+        titulo: "Tratamientos para sentirte bien",
+        subtitulo: "Rituales de cuidado diseñados para ti, con la calma y la atención que tu piel merece.",
+        botonItem: "Consultar tratamiento",
+        items: [
+          {
+            nombre: "Faciales & Glow",
+            precio: "Desde 50 €",
+            descripcion: "Higiene profunda, Indiba, vitamina C, Dermapen y experiencias para devolver luminosidad a tu piel.",
+            combinaCon: "Efecto Glow"
+          },
+          {
+            nombre: "Láser & Fotorejuvenecimiento",
+            precio: "Desde 10 €",
+            descripcion: "Tecnología avanzada integrada con calma y respeto por tu piel.",
+            combinaCon: "Fotorejuvenecimiento facial"
+          },
+          {
+            nombre: "Mirada & Expresión",
+            precio: "Desde 10 €",
+            descripcion: "Diseño, laminado de cejas y lifting de pestañas para realzar tu expresión.",
+            combinaCon: "Lifting de pestañas"
+          },
+          {
+            nombre: "Depilación tradicional con cera",
+            precio: "Desde 10 €",
+            descripcion: "Cuidado artesanal y suave con cera caliente o tibia.",
+            combinaCon: "Cuidado respetuoso con tu piel"
+          }
+        ]
+      },
+      carta: [
+        {
+          titulo: "Depilación con cera caliente o tibia",
+          descripcion: "Servicios tradicionales y respetuosos con tu piel.",
+          servicios: [
+            ["Piernas enteras + ingles", "30 €"], ["1/2 piernas", "15 €"], ["Ingles", "15 €"],
+            ["Ingles brasileñas", "20 €"], ["Brazos", "15 €"], ["Axilas", "10 €"],
+            ["Zona alba", "10 €"], ["Pecho + abdomen", "35 €"], ["Pecho", "25 €"],
+            ["Espalda completa", "35 €"], ["Pecho + espalda", "50 €"]
+          ]
+        },
+        {
+          titulo: "Tratamientos faciales & experiencias Glow",
+          descripcion: "Tratamientos diseñados para revitalizar y devolver luminosidad natural al rostro.",
+          grupos: [
+            { titulo: "Cuidado facial base & avanzado", servicios: [
+              ["Higiene facial", "50 €"], ["Higiene facial + Indiba", "65 €"],
+              ["Tratamiento con Dermapen", "80 €"], ["Bono de 4 sesiones Dermapen", "280 €"]
+            ] },
+            { titulo: "Tratamientos personalizados", servicios: [
+              ["Efecto GLOW · 45 min", "55 €"], ["Oxígeno", "70 €"], ["Vitamina C", "75 €"],
+              ["Colágeno", "80 €"], ["Pack boda · 4 sesiones", "250 €"]
+            ] }
+          ]
+        },
+        {
+          titulo: "Cejas y pestañas",
+          descripcion: "Resalta la armonía y expresión de tu mirada.",
+          servicios: [
+            ["Diseño de cejas", "15 €"], ["Depilación de cejas + labio", "10 €"],
+            ["Tinte de cejas", "15 €"], ["Laminado de cejas", "30 €"],
+            ["Laminado + diseño / depilación", "35 €"], ["Laminado + diseño + tinte", "40 €"],
+            ["Tinte de pestañas", "15 €"], ["Lifting de pestañas", "39 €"],
+            ["Lifting + tinte de pestañas", "45 €"]
+          ]
+        },
+        {
+          titulo: "Fotorejuvenecimiento & depilación láser",
+          descripcion: "Tratamientos avanzados con láser.",
+          grupos: [
+            { titulo: "Fotorejuvenecimiento facial", servicios: [["Sesión", "80 €"]] },
+            { titulo: "Depilación láser femenina · zona mini", nota: "10 € por zona", servicios: [
+              ["Línea alba", "10 €"], ["Areolas", "10 €"], ["Mentón", "10 €"], ["Nuca", "10 €"],
+              ["Manos", "10 €"], ["Pies", "10 €"], ["Entrecejo", "10 €"], ["Patillas", "10 €"], ["Cuello", "10 €"]
+            ] },
+            { titulo: "Depilación láser femenina · zona pequeña", servicios: [
+              ["Perianal", "15 €"], ["Axilas", "20 €"], ["Ingles", "30 €"],
+              ["Abdomen + pecho", "30 €"], ["Glúteos", "30 €"], ["Hombros + zona lumbar", "30 €"]
+            ] }
+          ],
+          promocion: "Con la compra del bono de 4 sesiones de fotorejuvenecimiento, te regalamos un tratamiento GLOW."
+        }
+      ],
+      nosotros: {
+        titulo: "¿Quién es Ana Márquez?",
+        texto: "Ana Márquez es la propietaria de Ana Márquez Estética & Bienestar. Está al frente de un espacio donde cada tratamiento se realiza con precisión y atención minuciosa al detalle. Su perfeccionismo y dedicación se reflejan en un cuidado personalizado, pensado para que cada persona se sienta atendida con mimo.",
+        datos: ["Propietaria del centro", "Precisión en cada detalle", "Perfección en cada detalle"],
+        fraseEstrella: "Yo pongo vuestras células en marcha en cabina y vosotras las mimáis en casa."
+      },
+      resenas: {
+        titulo: "Lo que cuentan nuestras clientas",
+        puntuacion: 5,
+        total: "Opiniones reales pendientes de verificar",
+        enlaceGoogle: "https://www.google.com/search?q=Ana+Marquez+Estetica+Utiel",
+        lista: [
+          { estrellas: 5, texto: "Un trato muy cercano y una gran profesionalidad. Me explicaron todo con calma y el resultado fue precioso.", nombre: "Ejemplo de opinión · Elena", fecha: "Texto de muestra" },
+          { estrellas: 5, texto: "Una experiencia tranquila, cuidada y personalizada. El centro transmite mucha limpieza y bienestar.", nombre: "Ejemplo de opinión · Laura", fecha: "Texto de muestra" },
+          { estrellas: 5, texto: "Encontré exactamente el tratamiento que necesitaba. Volveré por la atención y por cómo me hicieron sentir.", nombre: "Ejemplo de opinión · Marta", fecha: "Texto de muestra" }
+        ]
+      },
+      pilares: [
+        {
+          icono: "hoja",
+          titulo: "Cuidado consciente",
+          texto: "Tratamientos pensados para cuidar tu piel con atención, calma y cercanía."
+        },
+        {
+          icono: "sol",
+          titulo: "Innovación y tradición",
+          texto: "Tecnología estética avanzada y rituales de belleza inspirados en el bienestar mediterráneo."
+        },
+        {
+          icono: "manos",
+          titulo: "Belleza auténtica",
+          texto: "Un espacio tranquilo para resaltar tu versión más auténtica."
+        }
+      ],
+      ubicacion: {
+        titulo: "estamos en Utiel",
+        direccion: "C. Cesáreo Marco Yagüe, nº 14 bajo, 46300 Utiel, Valencia",
+        horario: [
+          { dias: [1, 2, 3, 4, 5], etiqueta: "Lunes a viernes", periodos: [{ inicio: "10:00", fin: "14:00" }, { inicio: "16:00", fin: "20:00" }] },
+          { dias: [6], etiqueta: "Sábados", periodos: [{ inicio: "10:00", fin: "14:00" }] }
+        ],
+        indicaciones: "Abrimos de lunes a viernes de 10:00 a 14:00 y de 16:00 a 20:00, y los sábados de 10:00 a 14:00. Escríbenos o llámanos para consultar disponibilidad.",
+        mapaQuery: "Ana Márquez, C. Cesáreo Marco Yagüe 14, 46300 Utiel, Valencia"
+      },
+      faq: [
+        { p: "¿Cómo puedo reservar una cita?", r: "Escríbenos por WhatsApp o llámanos. Te ayudaremos a encontrar el tratamiento y el horario que mejor te vayan." },
+        { p: "¿Dónde puedo consultar los precios?", r: "Puedes consultar la carta de tratamientos y sus precios en esta página. Si necesitas orientación, escríbenos y te ayudaremos." },
+        { p: "¿Cuál es el horario del centro?", r: "Abrimos de lunes a viernes de 10:00 a 14:00 y de 16:00 a 20:00, y los sábados de 10:00 a 14:00. Llámanos o escríbenos para consultar disponibilidad." },
+        { p: "¿Dónde está Ana Márquez?", r: "Estamos en C. Cesáreo Marco Yagüe, nº 14 bajo, 46300 Utiel, Valencia. Puedes abrir el mapa desde el enlace «Cómo llegar» del pie de página." }
+      ],
+      ctaFinal: {
+        titulo: "¿Te reservamos un ratito?",
+        texto: "Cuéntanos qué tratamiento te interesa y nos pondremos en contacto contigo para encontrar el mejor momento."
+      },
+      ubicacionLocal: "Utiel"
+    };
+  </script>
+  <script src="app.js" defer></script>
+</body>
+</html>
